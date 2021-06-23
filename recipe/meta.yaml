@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-zendesk" %}
-{% set version = "1.0.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-zendesk-{{ version }}.tar.gz
-  sha256: 003bf2cbcab6dfc8aad000e7a30acd65787e1d86e326c1e596b3b51f7d034d19
+  sha256: dfe93de4341d758d11830de386daa2212a67d50d417c5f9e712fc072b996fa34
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - setuptools
     - wheel
   run:
-    - apache-airflow >=2.0.0
+    - apache-airflow >=2.1.0
     - python >=3.6
     - zdesk
 
