@@ -16,14 +16,13 @@ build:
 
 requirements:
   host:
+    - python >=3.6
     - pip
-    - python >=3.6
     - setuptools
-    - wheel
   run:
-    - apache-airflow >=2.1.0
     - python >=3.6
-    - zdesk
+    - apache-airflow >=2.1.0
+    - zenpy >=2.0.24
 
 test:
   imports:
