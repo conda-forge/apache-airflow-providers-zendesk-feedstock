@@ -10,9 +10,9 @@ source:
   sha256: a490611a9c2d05a63ed2e000d0795b36559bc040d8014a8dd02ab94f73be00a3
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -27,7 +27,7 @@ requirements:
 test:
   imports:
     - airflow.providers.zendesk
-    - airflow.providers.zendesk.hooks
+    - airflow.providers.zendesk.example_dags
   commands:
     - pip check
   requires:
@@ -35,9 +35,10 @@ test:
 
 about:
   home: https://airflow.apache.org/
-  summary: Provider for Zendesk for Apache Airflow
+  summary: Provider for Apache Airflow. Implements apache-airflow-providers-zendesk package
   license: Apache-2.0
   license_file: LICENSE
+  license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-zendesk/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
