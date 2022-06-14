@@ -21,13 +21,13 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - apache-airflow >=2.1.0
+    - apache-airflow >=2.2.0
     - zenpy >=2.0.24
 
 test:
   imports:
     - airflow.providers.zendesk
-    - airflow.providers.zendesk.example_dags
+    - airflow.providers.zendesk.hooks
   commands:
     - pip check
   requires:
@@ -37,7 +37,9 @@ about:
   home: https://airflow.apache.org/
   summary: Provider for Apache Airflow. Implements apache-airflow-providers-zendesk package
   license: Apache-2.0
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-zendesk/stable/index.html
   dev_url: https://github.com/apache/airflow/
