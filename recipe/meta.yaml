@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_zendesk-{{ version }}.tar.gz
   sha256: c9af0630eddfa07e00328a6017f3afc850fadb024f8a26093c77a7b5e21c948b
 
 build:
