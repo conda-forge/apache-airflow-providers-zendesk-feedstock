@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-zendesk" %}
-{% set version = "4.6.0" %}
+{% set version = "4.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_zendesk-{{ version }}.tar.gz
-  sha256: c9af0630eddfa07e00328a6017f3afc850fadb024f8a26093c77a7b5e21c948b
+  sha256: 8f074ae9ab6100ca5f88a9a351bb09e207856c9a153feff11ef1d4ee139a0f0b
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - apache-airflow >=2.6.0
-    - zenpy >=2.0.24
+    - apache-airflow >=2.7.0
+    - zenpy >=2.0.40
 
 test:
   imports:
