@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-zendesk" %}
-{% set version = "4.10.0" %}
+{% set version = "4.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_zendesk-{{ version }}.tar.gz
-  sha256: 9766537c5e59a756ea5b569e9e7212ad1ba2d2cb2b602ecd5d6bd9b68b251a0b
+  sha256: 1a57a5daff6cb1bbbea3d6001e1088b522413eb9a6466a3a8136f554a1433149
 
 build:
   noarch: python
