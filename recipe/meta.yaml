@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-zendesk" %}
-{% set version = "4.10.3" %}
-{% set python_min = "3.10" %}
+{% set version = "4.10.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_zendesk-{{ version }}.tar.gz
-  sha256: e70aa1f0d73dc3a24bb7c19897e23f5f44cc1dd6a24b7193aa056f999be0b0b0
+  sha256: 4d5df90dabf934b04438a852d34c77c9a348a2df66819b03089db74dc4e1a066
 
 build:
   noarch: python
@@ -39,7 +38,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-zendesk for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/zendesk/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-zendesk/stable/index.html
   dev_url: https://github.com/apache/airflow/
